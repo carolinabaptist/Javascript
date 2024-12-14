@@ -1,0 +1,11 @@
+//Write a JavaScript function to get the first element of an array. Passing the parameter 'n' will return the first 'n' elements of the array.
+
+var first = function(array, n) {
+  if (array == null)
+    return void 0;
+  if (n == null)
+    return array[0];
+  if (n < 0)
+    return [];
+  return array.slice(0, n);
+};
